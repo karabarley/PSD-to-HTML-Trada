@@ -1,0 +1,99 @@
+html{
+    font-family: $baseFont;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 100px;  
+}
+
+ h2{
+    font-size:40px;
+}
+
+h3{
+    font-size:25px;
+}
+
+h4{
+    font-size:20px;
+    letter-spacing: 2px;
+}
+
+h5{
+    font-size:15px;
+    font-weight: normal;
+}
+ 
+h6{
+    font-size: 11px;
+    // and sometimes 12px;
+}
+
+p{
+    font-size: 13px;
+    font-family: $alternateFont;
+    line-height: 1.75;
+    // and sometimes 14px;
+}
+
+.main-nav li p, button p, .scroll-box p{
+    font-family: $baseFont;
+}
+
+// uppercase
+h1, 
+h3, 
+.main-nav li p, 
+h4, 
+button p, 
+.content-front h5, 
+button,
+.services-box h5,
+.portfolio-type, 
+.works-box h5,
+.fact-box p{
+    text-transform: uppercase;
+}
+
+//oblique
+.works-box h6{
+    font-family: $alternateFont;
+    font-weight:light;
+    font-style: oblique;
+    text-transform: capitalize;
+}
+
+//font-weight: darker
+ button p{
+     font-weight: bold;
+ }
+
+// font-weight: lighter
+ h4 span, 
+ button p{
+     font-weight: 400;
+ }
+ .services p{
+    font-style: lighter;
+}
+
+ .fact-box p{
+    font-family: $baseFont;
+    font-size: 13px;
+ }
+
+ .inputs li input{
+    font-family: $alternateFont;
+    font-size: 12px;
+ }
+ 
+.services h4{
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.services i{
+    font-weight: lighter;
+    font-size: 20px;
+}

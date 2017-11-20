@@ -1,0 +1,89 @@
+.services{
+    background: $sectionColorDarker;
+    color:white;
+}
+
+.services .wrapper2{
+    @include parent-flex-row;
+}
+
+.services i, 
+.services .services-text h5{
+    color: $primaryColor;
+}
+// positioning icons in the middle of the page
+.services i{
+    transform: translate(40%, -50%);
+
+}
+.services h4{
+    margin-top: 0%;
+}
+
+.services-text h4, 
+.services-text .box1 h5{
+    position: relative;
+    
+}
+.services-container:last-of-type{
+    background: url(../assets/hipster_animal_bones_cropped.jpg);
+    background: cover;
+}
+// this will change to display block upon one of the smaller breakpoint (and replace the background image)
+.services img{
+    display: none;
+    max-width: 100%;
+}
+
+.services-container{
+    width:50%;
+    text-align: right; 
+}
+
+.services-text{
+    width: 65%;
+    float: right;
+    padding-right: 10%;
+}
+
+.services h4{
+    font-size: 20px;
+    padding-top: 25%; 
+}
+
+
+.services-box{
+    position: relative;
+    margin-bottom: 10%;
+}
+// positioning the icons relative to the text
+.circle-icon--umbrella,
+.circle-icon--money,
+.circle-icon--dropbox{
+    @include circle-icon(white);
+    position: absolute;
+    top:50%;
+    right:-20%;
+    transform: translate(50%,-50%)
+}
+
+// decorative lines under "our services"
+.services-text .box1 h5:after {
+    content: '';
+    width: 10%;
+    border-bottom: 1px solid lightgrey;
+    position: absolute;
+    right: 0;
+    bottom:160%;
+    z-index: 1;
+}
+.services-text h4:after {
+    content: '';
+    width: 20%;
+    border-bottom: 1px solid lightgrey;
+    position: absolute;
+    right: 0;
+    bottom: -10%;
+    z-index: 1;
+}
+

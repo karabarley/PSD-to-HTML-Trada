@@ -1,0 +1,149 @@
+footer{
+    background: $sectionColorDarker;
+    padding-top: 5%;
+    color:grey;
+}
+
+footer h6 {
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+footer .wrapper{
+    @include parent-flex-row;
+    padding-bottom: 15px; 
+}
+
+.footer-box{
+    text-align: center;
+    width:33.33%;
+}
+.footer-logo{
+    margin-bottom: 25px;
+}
+.footer-box .footer-logo h3{
+    border: 2px solid $primaryColor;
+    padding: 10px;
+    display: inline;
+    transform: translateX(-50%);
+    color:white;
+    margin-bottom: 5px;
+}
+// styling footer social links
+.footer-social{
+    padding-left:0;
+    @include parent-flex-row;
+    margin: 15% auto;
+    justify-content: center;
+
+}
+.footer-social li{
+    padding:10px;
+    border-radius: 50%;
+    border:1px solid grey;
+    margin: 2px;
+}
+// adjusting padding to ensure that a circle border is built around it through border radius
+.footer-social li:nth-child(1){
+    padding:10px 13px;
+}
+.footer-social li:nth-child(3){
+    padding:10px 15px;
+}
+
+.footer-social li:nth-child(4){
+    padding:10px 14px;
+
+}
+.footer-social li i {
+    color:grey;
+}
+
+
+.contact-details{
+    text-align: left;
+}
+
+.location-details{
+    text-align:right;
+}
+// diamond border
+ .footer-box .diamond{
+    @include diamond-inner($sectionColorDarker);
+}
+
+.footer-box .outer-diamond{
+    @include diamond-outline(lightgray);
+    margin: 0 auto;
+}
+
+.footer-box .diamond-right{
+    width: 50px;
+    border-bottom: 1px solid lightgray;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom:25px;
+    left: 0px;
+}
+.footer-box .diamond-left{
+    width: 50px;
+    border-bottom: 1px solid lightgray;
+    transform: rotate(-45deg);
+    position: absolute;
+    top:25px;
+    right: 0px;
+}
+// decorative lines under 'location details'
+.location-details h6:after {
+    content: '';
+    width: 5%;
+    border-bottom: 1px solid grey;
+    position: absolute;
+    right: 0;
+    top: 15%;
+    z-index: 1;
+}
+
+.location-details p:after {
+    content: '';
+    width: 2.5%;
+    border-bottom: 1px solid grey;
+    position: absolute;
+    top: 16%;
+    right: 0;
+    z-index: 1;
+}
+// decorative lines under 'contact details'
+.contact-details h6:after {
+    content: '';
+    width: 5%;
+    border-bottom: 1px solid grey;
+    position: absolute;
+    left: 0;
+    top: 15%;
+    z-index: 1;
+}
+
+.contact-details p:after {
+    content: '';
+    width: 2.5%;
+    border-bottom: 1px solid grey;
+    position: absolute;
+    top: 16%;
+    left: 0;
+    z-index: 1;
+}
+// styling copyright section
+.copyright{
+    background: $sectionColorDarkest;
+    padding: 2.5px 0%;
+    color: grey;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.copyright p{
+    font-family: $baseFont;
+}

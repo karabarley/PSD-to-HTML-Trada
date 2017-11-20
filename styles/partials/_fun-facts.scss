@@ -1,0 +1,82 @@
+ .fun-facts{
+    background: $sectionColorDarker;
+    color:white;
+}
+.fun-facts .wrapper{
+    @include parent-flex-row;
+    justify-content: space-between;
+    padding-bottom:5%;
+}
+// background image of waterfall
+.fun-facts{
+    background-image: url("../assets/waterfall.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+    padding-top: 1%;
+}
+
+.fun-facts .text-box{
+    padding: 0;
+}
+.fun-facts .text-box h4{
+    margin-bottom: 2px;
+}
+.fun-facts .wrapper{
+    margin-top: 20px;
+}
+
+.fact-box{
+    border: 4px solid white;
+    width: 22.5%;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    
+}
+// social icons 
+.fact-box i{
+    background: white;
+    padding: 10px;
+    -webkit-text-stroke-color: $primaryColor;
+    -webkit-text-stroke-width: 1px;
+    margin-top: 10%;
+}
+// styling for diamond border
+.fun-facts .text-box .diamond{
+    width: 5px;
+    height: 5px;
+    background: $primaryColor;
+    border: 2px solid transparent;
+    transform-origin: top left;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 7px;
+    bottom: 2px;  
+    z-index: 1;
+}
+.fun-facts .text-box .outer-diamond{
+    width: 10px;
+    height: 10px;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    background: rgba(255,255,255,0.5);
+    position: relative;
+    transform: rotate(45deg);  
+}
+
+.text-box .diamond-right{
+    width: 50px;
+    border-bottom: 1px solid lightgray;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom: 25px;
+    left: 0px;
+}
+.text-box .diamond-left{
+    width: 50px;
+    border-bottom: 1px solid lightgray;
+    transform: rotate(-45deg);
+    position: absolute;
+    top:25px;
+    right: 0px;
+}

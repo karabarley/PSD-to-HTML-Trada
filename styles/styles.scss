@@ -1,0 +1,126 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* PARTIALS*/
+@import "partials/variables";
+@import "partials/setup";
+@import "partials/fonts";
+@import "partials/header";
+@import "partials/about";
+@import "partials/services";
+@import "partials/works";
+@import "partials/fun-facts";
+@import "partials/process";
+@import "partials/clients";
+@import "partials/contact";
+@import "partials/footer";
+@import "partials/responsive";
+@import "partials/animations";
+
+/* BACK SCROLL ICON styling */
+.scroll-box{
+    position: relative;
+    margin:50px;
+    border: 2px solid $primaryColor;
+    width: 50px;
+    height: 50px;
+}
+.scroll-box p{
+    line-height: 0.5;
+    margin: 10px;
+}
+
+.scroll-box{
+    position:fixed;
+    bottom:0%;
+    right:0%;
+    color: $primaryColor;
+    z-index: 1;
+}
+
+i.scroll-up{
+    position:absolute;
+    top:-20px;
+    left:17.5px;
+    color: $primaryColor;
+}
+
+i.scroll-down{
+    position:absolute;
+    bottom:-20px;
+    left:17.5px;
+    color: $primaryColor;
+}
+// wrapper defaults
+.wrapper{
+    width: 65%;
+    margin: auto;
+    position: relative;
+}
+
+.wrapper2{
+    @include parent-flex-row;
+}
+
+// to remove all bullet points from lists created
+ul{
+    list-style: none;
+}
+// content front background for section ABOUT and PROCESS
+.content-front{
+    background: white;
+}
+// button defaults
+button{
+    padding: 5px 0px;
+    width: 130px;
+    border: 2px solid black;
+    margin: 2.5px;
+    font-size: 11px;
+    background: transparent;
+}
+button p{
+    color:black;
+}
+
+// to standardize headers of each section
+.text-box{
+    width:75%;
+    margin: 0 auto;
+    line-height: 1.5;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.text-box h4{
+    margin-bottom:7.5px;
+}
+// diamond textbox border default
+ .text-box .diamond{
+    @include diamond-inner(white);
+}
+
+.text-box .outer-diamond{
+    @include diamond-outline(lightgray);
+    margin: 0 auto;
+}
+
+.text-box .diamond-right{
+    width: 50px;
+    border-bottom: 1px solid lightgray;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom:25px;
+    left: 0px;
+}
+.text-box .diamond-left{
+    width: 50px;
+    border-bottom: 1px solid lightgray;
+    transform: rotate(-45deg);
+    position: absolute;
+    top:25px;
+    right: 0px;
+}
+
+

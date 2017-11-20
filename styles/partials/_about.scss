@@ -1,0 +1,250 @@
+.about{
+    background: $sectionColorLight;
+    text-align: center; 
+    padding-bottom: 5%;
+}
+
+// positioning the icon in the top-center of the section
+.circle-icon--anchor{
+    @include circle-icon($primaryColor);
+    color: white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.content-box{
+    width:50%;
+    text-align: right;
+    position:relative;
+    margin-top:5%;
+}
+.content-box figure img{
+    width:65%;
+    
+}
+.content-back figure {
+    position: relative;   
+}
+// decorative dashes
+.content-box ul.dashes {
+    @include parent-flex-row;
+    justify-content: center;
+    padding: 0;
+    position: absolute;  
+    right: 25%;
+    bottom: 20%;
+    transform: translate(25%,100%);
+}
+
+.content-back ul.dashes li{
+    width: 50px;
+    border-bottom: 3px solid rgba(255, 255,255, 0.5);
+    margin: 10px;
+    margin-top: 25%;
+    z-index: 1;
+}
+// styling for content in white box
+.about .content-front p{
+    margin-top: -10px;
+}
+
+.about .content-box .content-front{
+    padding-top:2%;
+    padding-bottom: 8%;
+}
+
+.content-front{
+    text-align: left;
+    width: 65%;
+    z-index: 1px;
+    position:absolute;
+    left:-5%;
+    top:4%;
+    padding: 5% 7.5% 7.5%;
+    margin-bottom: 5%;
+}
+
+.content-front h4, .content-front p{
+    position: relative;
+    
+}
+
+.about .content-front h4:after {
+    content: '';
+    width: 20%;
+    border-bottom: 1px solid lightgrey;
+    position: absolute;
+    left: 0;
+    bottom: -20%;
+    z-index: 1;
+}
+
+.about .content-front p:after {
+    content: '';
+    width: 10%;
+    border-bottom: 1px solid lightgrey;
+    position: absolute;
+    left: 0;
+    top: -11%;
+    z-index: 1;
+}
+// styling for percentage arrows start here
+.percentage-bar{
+    padding-bottom: 15px;
+    position: relative;
+}
+.content-front .percentage-bar h6 span{
+    font-style: oblique;
+}
+
+.percentage-bar h6{
+    display:inline-block;
+    padding-bottom:5px;
+
+}
+.percentage-bar h6:first-of-child{
+    color:pink;
+}
+
+.percentage-bar h6{
+    display:inline-block;
+    margin-bottom:1px;
+
+}
+
+ .percentage-bar h6{
+     font-family: $alternateFont;
+     font-weight: lighter;
+     font-style: oblique;
+ }
+.bar1 {
+    position: relative;
+}
+ .bar1 .bar-filled{
+     border-bottom: 1px solid $primaryColor;
+     width: 50%;
+     float:left;
+     text-align: left;
+ }
+ .bar1 .bar-empty{
+    border-bottom: 1px solid $lineColor;
+    width: 50%;
+    float:left;
+    text-align: right;
+
+ }
+
+  .bar2 .bar-filled{
+     border-bottom: 1px solid $primaryColor;
+     width: 70%;
+     float:left;
+    text-align: left;
+ }
+ .bar2 .bar-empty{
+    border-bottom: 1px solid $lineColor;
+    width: 30%;
+    float:left;
+    text-align: right;
+
+ }
+
+   .bar3 .bar-filled{
+     border-bottom: 1px solid $primaryColor;
+     width: 40%;
+     float:left;
+    text-align: left;
+ }
+ .bar3 .bar-empty{
+    border-bottom: 1px solid $lineColor;
+    width: 60%;
+    float:left;
+    text-align: right;
+
+ }
+    .bar4 .bar-filled{
+     border-bottom: 1px solid $primaryColor;
+     width: 93%;
+     float:left;
+    text-align: left;
+ }
+ .bar4 .bar-empty{
+    border-bottom: 1px solid $lineColor;
+    width: 7%;
+    float:left;
+    text-align: right;
+
+ }
+
+.arrow-end{
+    width: 5px;
+    height: 5px;
+    border-left: 1px solid $primaryColor;
+    position: absolute;
+    top:43px;
+}
+
+.bar2 .arrow-end{
+    width: 5px;
+    height: 5px;
+    border-left: 1px solid $primaryColor;
+    position: absolute;
+    top:74px;
+}
+.bar3 .arrow-end{
+    width: 5px;
+    height: 5px;
+    border-left: 1px solid $primaryColor;
+    position: absolute;
+    top:105px;
+}
+
+.bar4 .arrow-end{
+    width: 5px;
+    height: 5px;
+    border-left: 1px solid $primaryColor;
+    position: absolute;
+    top:136px;
+}
+.bar1::after {
+    @include bar-arrow;
+    bottom:-36px;
+    right:48%;
+ }
+ .bar2::after {
+    @include bar-arrow;
+    bottom:-67px;
+    right:27%;
+ }
+ 
+  .bar3::after {
+    @include bar-arrow;
+    bottom:-97px;
+    right:57%;
+ }
+   .bar4::after {
+    @include bar-arrow;
+    bottom:-129px;
+    right:5%;
+ }
+ .percentage-bar h6:last-child{
+     font-style: normal;
+ }
+
+ .about .content-front {
+     padding-top: 0%;
+     padding-bottom:2.5%;
+
+ }
+ .about .content-front h5 {
+     margin-bottom: 5px;
+
+ }
+// button styling 
+ .about button{
+     padding: 5px 0px;
+
+ }
+.about button p{
+
+     margin: 0px 0px;
+ }

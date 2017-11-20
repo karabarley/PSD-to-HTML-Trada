@@ -1,0 +1,415 @@
+/* breakpoint for ABOUT section */
+@media (max-width: 1270px){
+
+    // to align content boxes
+    .process .content-front,
+    .about .content-front{
+        left:0;
+        top:0;
+        padding-bottom: 10px;
+    }
+    // to reduce font size
+    .about .content-front p{
+        font-size: 10px;
+    }
+
+}
+/* breakpoint for ABOUT section */
+@media (max-width: 1110px) {
+
+    // to center content box and image
+    .about .wrapper2{
+        @include parent-flex-column;
+        padding-bottom: 10%;
+    }
+    .content-box{
+        width:100%;
+        text-align: center;
+        position:relative;
+        margin-top:5%;
+    }
+    .content-box figure img{
+        width:50%;
+    }
+    .process .content-front,
+    .about .content-front{
+        text-align: center;
+        width: 40%;
+        left:50%;
+        top:25%;
+        transform: translate(-50%,-50%);
+    }
+    .process, .about{
+        padding-bottom: 20%;
+    }
+        .clients{
+        padding-top:-5%;
+    }
+
+    // to hide decorative divs
+    .content-box .content-back ul.dashes,
+    .about .content-front h4:after,
+    .about .content-front p:after
+     {
+        display: none;
+    }
+}
+/*breakpoint for WORKS section*/
+@media (max-width: 1070px){
+    // to keep 'web design' li the same size as other lis
+    .portfolio-type li:nth-child(4){
+        padding:2px 30px;
+    }
+}
+
+/*breakpoint for WORKS section*/
+@media (max-width: 770px){
+    .works .wrapper2 {
+        @include parent-flex-column;
+    }
+}
+/*breakpoint for WORKS section*/
+@media (max-width: 570px){
+    // to display portfolio links in column and all the same size
+    ul.portfolio-type {
+        @include parent-flex-column;
+        justify-content: center;
+        align-items: center;
+    }
+    .portfolio-type li {
+        width: 250px;
+    }
+    .portfolio-type li span{
+        display: block;
+    }
+    // to make li all lis rectangles
+    .portfolio-type li:first-child{
+        border-radius: 00% 00% 0% 00%;
+    }
+    .portfolio-type li:last-child{
+        border-radius: 00% 00% 00% 00%;
+    }
+    .works-nav{
+        display: none;
+    }
+}
+
+/*breakpoint for HEADER section*/
+@media (max-width: 980px) {
+    // to center content header to the middle of the page
+    .nav-bar{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .logo-container{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .logo{
+        margin-left: 0%;
+    }   
+
+    .logo-container .logo h3{
+        padding:10px;
+    }
+    .nav-wrapper{
+        margin: 0 auto;
+    }
+    header .social-bar{
+        margin-right:0;
+    }
+    header .social-bar li{
+        margin-right:0;
+        padding: 10px;
+    }
+    header .main-text{
+        position: relative;
+    }    
+    header .main-text h3{
+        display:block;
+        position: absolute;
+        top:-80%;
+    }
+
+    header h1 span:first-of-type{
+        display:block;
+        position: absolute;
+        top:-15%;
+        left:50%;   
+        transform: translateX(-50%);
+    }
+    // to hide decorative divs
+    ul.dashes{
+        display: none;
+    }
+}
+// iphone 5 mobile breakpoint
+@media  (max-width: 320px){
+    header .social-bar {
+        margin-bottom: 25%;
+    }
+    .main-text h3{
+        font-size:11px;
+        margin-bottom:-5%   ;
+    }
+    .main-text h1{
+        font-size: 25px;
+        margin-bottom: 25%;
+    }
+    .services{
+        margin-top: 15%;
+    }
+    .clients{
+        margin-top: 30%;
+    }
+    .fun-facts{
+        padding-bottom: 10%;
+    }
+}
+/*breakpoint for ABOUT section*/
+@media (max-width: 815px){
+
+     .process .content-front,
+     .about .content-front{
+        width: 100%;
+        margin-top: 5%;
+    }  
+    .process {
+        margin-bottom: 5%;
+    }
+    // positioning of arrow head so that it is connected to the arrow stem
+    .bar1::after {
+        right:49%;
+    }
+    .bar2::after {
+        right:28.5%;
+    }
+    
+    .bar3::after {
+
+        right:58.5%;
+    }
+    .bar4::after {
+
+        right:5.5%;
+    }
+    .about{
+        padding-bottom:25%;
+    }
+}
+
+/* breakpoint for FUN-FACTS section*/
+ @media (max-width:770px){
+    // to display fact boxes in column
+    .fun-facts .wrapper{
+        @include parent-flex-column;    
+        align-items: center;
+    }
+    .fact-box{
+        margin: 10% 5%;
+        width: 75%;
+    }
+    // to create a banner with the section's previous background image
+    .fun-facts .text-box{
+        background-image: url("../assets/waterfall-rsz.jpg");
+        width: 100%;
+        height: 100%;
+        padding: 10% 0%;
+        border: 5px solid white;
+        margin-top:-5%;
+    }
+    .fun-facts{
+        background-image: none;
+    }
+} 
+/* breakpoint for SERVICES section*/
+@media (max-width: 760px){
+    // to display content and image in column and in the center of the page
+    .services .wrapper2{
+        @include parent-flex-column;
+    }
+    .services img{  
+        display: block;
+        max-width: 100%;
+    }
+
+    .services-text{
+        margin-top:5%;
+        padding-right:0;
+    }
+
+    .services,
+    .services-text{
+        display: block;
+        width: 100%;
+    }
+    .services-box{
+        width: 80%;
+        margin: 15% auto;
+        padding-top: 10%;
+    }
+    // to center circle icons to the middle of the page
+    .circle-icon--umbrella,
+    .circle-icon--money,
+    .circle-icon--dropbox{
+        @include circle-icon(white);
+        top:0%;
+        right:50%;
+    }
+    
+    .services-container{
+        width: 100%;
+        text-align: center;
+    }
+    .services figure{
+        width: 100%;
+    }
+    .services-container img {
+        width: 100%;
+    }
+    // to hide decorative elements
+    .services-text h4:after,    
+    .services-text .box1 h5:after{
+        display: none;
+    }
+}
+
+
+/*breakpoint for HEADER and ABOUT*/
+@media (max-width: 650px ){
+    .about{
+        margin-bottom: 15%;
+    }
+    .content-box figure img{
+        width:100%;
+    }
+    .main-nav{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    header h1{
+        font-size: 50px;
+        margin-bottom: 10%;
+    }
+    header .main-text h3{
+        display:block;
+        position: absolute;
+        top:-100%;
+    }
+    .scroll-box{
+        position:fixed;
+        top: -3.5%;
+        right:-5%;
+    }
+    header .main-text{
+        margin-top:20%;
+    }
+    .scroll-box{
+        display: none;
+    }
+        .clients{
+        padding-top:5%;
+    }
+
+}
+// breakpoint for SERVICES
+@media (max-width:760px){
+        .services h4{
+        padding-top: 10%;
+    }
+}
+@media (max-width:440px){
+        .services h4{
+        margin-top: 25%;
+    }
+}
+/*
+/*breakpoint for PROCESS section*/
+@media (max-width: 1110px){
+    .process .wrapper2{
+        @include parent-flex-column;
+        background: $sectionColorLight;
+    }
+}
+@media (max-width: 1110px){
+    .process .wrapper2{
+        @include parent-flex-column;
+        background: $sectionColorLight;
+    }
+    .process{
+        padding-bottom: 30%;
+    }
+
+}  
+/*breakpoint for PROCESS section*/
+@media (max-width: 650px){
+    .process{
+        margin-bottom: 15%;
+    }
+
+}
+/*breakpoint for PROCESS section*/
+@media (max-width: 450px){
+    .process{
+        padding-bottom: 50%;
+    }
+
+}
+
+/*breakpoint for CLIENT section */
+@media (max-width: 1140px){
+    .client-logos li img{
+        width: 75%;
+    }
+
+}
+/*breakpoint for CLIENT section */
+@media (max-width: 750px){
+    .client-logos{
+    @include parent-flex-column;
+        max-width: 40%;
+    }
+    .client-logos li{
+        border: none;
+    }
+    .client-container i{
+        display:none;
+    }
+/*breakpoint for contact section */
+    .inputs{
+        @include parent-flex-column;
+        columns: 1;
+    }
+
+    .inputs li{
+        width: 100%;
+    }
+    .inputs li:last-child input{
+        width: 100%;
+        margin-left:0px;
+
+    }
+}
+/* breakpoint for footer*/
+@media (max-width: 850px){
+footer .wrapper{
+    @include parent-flex-column;
+        justify-content: center;
+}
+    .footer-box{
+        padding-top: 10%;
+        width: 100%;
+    }
+    .contact-details{
+        text-align: center;
+    }
+
+    .location-details{
+        text-align:center;
+    }
+
+    .footer-social{
+        margin: 5% auto;
+    }
+}
+

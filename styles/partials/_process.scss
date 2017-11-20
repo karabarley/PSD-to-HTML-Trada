@@ -1,0 +1,56 @@
+
+.process{
+    background: $sectionColorLight;
+    padding-bottom: 5%;
+    margin-bottom: 0;
+}
+.circle-icon--database{
+    @include circle-icon($primaryColor);
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.process .content-front{
+    text-align: center;
+    margin: 0;
+}
+
+.process .content-front{
+    top:6%;
+    padding-bottom: 5%;
+}
+// decorative line under 'web design'
+.process .content-front h4:after {
+    content: '';
+    width: 10%;
+    border-bottom: 2px solid lightgrey;
+    position: absolute;
+    left: 50%;
+    bottom: -30%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.content-front i{
+    position: static;
+    @include circle-icon(black);
+    color:white;
+    margin-top: 5%;    
+    transform: translateX(-0%);
+}
+// styling for numbers 1 to 4
+.progression{
+    @include parent-flex-row;
+    justify-content: space-between;
+    padding: 15px 0px 0px;
+    width: 50%;
+    margin: 5% auto;
+    font-family: $alternateFont;
+}
+
+.progression a{
+    text-decoration: none;
+    color: $lineColor;
+}
+

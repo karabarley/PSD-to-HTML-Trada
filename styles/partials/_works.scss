@@ -1,0 +1,76 @@
+.works{
+    background: white;
+    padding-bottom: 5%;
+}
+.works-box{
+    margin: 2.5% 5px;
+    align-content: space-between;
+    border:1px solid $lineColor;
+    text-align: center;
+}
+.works-box img{
+    max-width: 100%;
+}
+.works-box figure{
+    position: relative;
+}
+// figcaption will appear on hover state
+.works-box figcaption{
+    display: none;
+    position: absolute;
+    top: 40%;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 20px;
+}
+.works-box figcaption a{
+    text-decoration: none;
+}
+
+.works-box figcaption i{
+    padding: 10px;
+    border-radius: 50%;
+    background: white;
+    color: grey;
+    text-decoration: none;
+}
+
+.portfolio-type{
+    @include parent-flex-row;
+    justify-content: center;
+    padding:0;
+}
+
+.portfolio-type li{
+    background: black;
+    color:white;
+    margin: 2px;
+    padding: 10px 25px;
+    font-size: 11px;
+}
+.portfolio-type li a{
+    color:white;
+    text-decoration: none;
+}
+// rounding the ends of the list
+.portfolio-type li:first-child{
+    border-radius: 50% 00% 0% 50%;
+}
+.portfolio-type li:last-child{
+    border-radius: 00% 50% 50% 00%;
+}
+// styling the arrows on the buttom of the section
+.works-nav{
+    @include parent-flex-row;
+    justify-content: center;
+
+}
+.works-nav button{
+    @include parent-flex-row;
+    text-align: center;
+    margin: 5px;
+    width: 25px;
+    padding-left:5px;
+}
+

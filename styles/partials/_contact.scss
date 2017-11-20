@@ -1,0 +1,38 @@
+.contact{
+    padding-bottom: 5%;    
+}
+
+.inputs{
+    @include parent-flex-row;
+}
+.inputs{
+padding-left: 0;
+}
+
+.inputs li {
+    width: 50%;
+    display: block;
+}
+
+.inputs li input{
+    width: 100%;
+    padding:10px;
+    border: 1px solid $lineColor;
+}
+
+.inputs li:first-child input{
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+// to get message box to extend in height and match to total hieght of the three input in first column
+.inputs li:last-child input{
+    width: calc(100% - 10px);
+    margin-left:10px;
+    padding-bottom: 102.5px;
+}
+// centering submit button
+.submit{
+    margin: 0 auto;
+    text-align: center;
+}

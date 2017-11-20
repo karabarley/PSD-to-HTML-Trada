@@ -1,0 +1,132 @@
+header{
+    background: url(../assets/rsz_bridge.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color:white; 
+}
+
+.logo h3{
+    font-family: $baseFont;
+}
+.main-text h3{
+    font-family: $alternateFont;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-top:0%;
+}
+
+header h1{
+    letter-spacing: 3px;
+    line-height: 0.5px;
+}
+// coloring in the "O" in priority
+header h1 span:last-of-type{
+    color: $primaryColor;
+}
+.nav-wrapper{
+    width: 50%;
+    margin: 0 auto;
+    margin-right: 12.5%;
+}
+
+.nav-bar,
+.main-nav,
+.social-bar{
+    @include parent-flex-row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:0;
+}
+
+.main-text{
+    @include parent-flex-column;
+    align-items: center;
+    margin-top: 15%;
+}
+
+.main-text h3, .main-text h1{
+    display: inline-block;
+}
+
+.logo{
+    justify-content: center;
+    margin-left: 40%;
+    color: white;
+
+}
+
+.logo-container .logo h3{
+    border: 2px solid $primaryColor;
+    padding: 10px;
+    padding-right: 90px;
+}
+// styling for social links
+.social-bar{
+    margin-right: 30px; 
+        
+}
+.social-bar__link{
+    margin-right: 30px;
+
+}
+.social-bar__link{
+    margin-right: 30px;
+    transition: all 0.8s;
+}
+
+// decorative dashes
+ul.dashes {
+    @include parent-flex-row;
+    justify-content: center;
+    padding: 0;
+}
+
+header ul.dashes li{
+    width: 50px;
+    border-bottom: 3px solid rgba(255, 255,255, 0.5);
+    margin: 10px;
+    margin-top: 50%;
+}
+
+
+
+
+.text-box .diamond-right{
+    width: 50px;
+    border-bottom: 1px solid lightgray;
+    transform: rotate(-45deg);
+    position: absolute;
+    bottom:25px;
+    left: 0px;
+}
+.text-box .diamond-left{
+    width: 50px;
+    border-bottom: 1px solid lightgray;
+    transform: rotate(-45deg);
+    position: absolute;
+    top:25px;
+    right: 0px;
+}
+
+.main-nav__link a,
+.social-bar a{
+    color:white;
+    text-decoration: none;
+}
+.scroll-box a{
+    color: $primaryColor;
+    text-decoration: none;
+}
+
+
+
+
+
+// .main-nav__link p:hover{
+//     background:transparent;
+//     padding: 10px 5px;
+//     border: 1px solid white;
+//     color:$primaryColor;
+// }

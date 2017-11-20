@@ -1,0 +1,151 @@
+// This document includes transitions, animations and hover states
+
+/*HEADER section*/
+.main-nav__link p, 
+.social-bar__link i,
+header ul.dashes li{
+    transition: all 0.3s;
+}
+.main-nav__link p:hover,
+.main-nav__link p:focus,
+.social-bar__link i:hover,
+.social-bar__link i:focus{
+    transform: scale(1.2);
+    color: $primaryColor;
+}
+header ul.dashes li:hover{
+    background: $primaryColor;
+}
+
+.content-back ul.dashes li:hover{
+    background: $primaryColor;
+}
+
+.logo, 
+.footer-logo{
+    transition: all 0.3s;
+}
+
+.logo:hover,
+.footer-logo:hover{
+    transform: scale(1.2);
+}
+
+/*WORKS section*/
+
+ul.portfolio-type li:hover,
+ul.portfolio-type li:focus{
+    transition: all 0.2s;
+}
+
+ul.portfolio-type li:hover,
+ul.portfolio-type li:focus{
+
+    background: $primaryColor;
+    transform: scale(1.1);
+}
+/*FUN-FACTS section*/
+.fact-box:hover{
+    transition: all 0.3s;
+}
+.fact-box:hover{
+    color:$primaryColor;
+    background: white;
+}
+
+/*PROCESS section*/
+
+ul.progression li{
+    transition: all 0.3s;
+
+}
+ul.progression li:hover,
+ul.progression li:focus{
+    transform: scale(1.2);
+}
+
+ul.progression li:hover a,
+ul.progression li:focus a{
+
+    color: $primaryColor;
+    text-decoration: underline;
+}
+/*CLIENTS section*/
+
+.progression-dots i{
+    color: grey;
+    transition: all 0.2s;
+}
+
+.progression-dots i:hover,
+.progression-dots i:active{
+    -webkit-text-stroke-color:white;
+   -webkit-text-stroke-width: 0.5px;
+   color: transparent;
+}
+
+
+.client-container li,
+.client-container i{
+    transition: all 0.3s;
+}
+
+.client-container li:hover{
+    background: $primaryColor;
+}
+
+.client-container i:hover,
+.cleint-container i:active{
+    background: $primaryColor;
+    border-color: $primaryColor;
+}
+
+/*FOOTER section*/
+
+.footer-social li{
+    transition: all 0.3s;
+}
+
+.footer-social li:hover{
+    background: $primaryColor;
+    border-color:white;
+    color:white;
+    transform: scale(1.2);
+}
+.footer-social li:hover i{
+    color:white;
+}
+/*button animations*/
+button{
+    transition: all 0.2s;
+}
+
+button:hover, 
+.submit button:hover, 
+.content-box button:hover,
+button:focus, 
+.submit button:focus, 
+.content-box button:focus{
+    background: $primaryColor;
+    border-color: $primaryColor;
+    
+
+}
+button:hover p, 
+.submit button:hover,
+.content-box button:hover,
+button:focus p, 
+.submit button:focus,
+.content-box button:focus{
+    color:white;
+
+}
+
+nav.works-nav button:hover i,
+nav.works-nav button:focus i{
+    color:white;
+}
+// fig caption links to appear on hover state
+.works-box figure:hover figcaption{
+    display: block;
+}

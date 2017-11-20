@@ -1,0 +1,113 @@
+
+.clients{
+    background: $sectionColorDark;
+    color: white;
+    margin-bottom:-10px;
+}
+.clients .wrapper{
+    position: relative;
+    text-align: center;
+}
+
+.circle-icon--quote{
+    @include circle-icon($primaryColor);
+    position: absolute;
+    transform: translate(-50%, -50%)
+}
+
+.clients .text-box p:last-of-type{
+    font-weight: lighter; 
+    display: inline-block;
+}
+.clients .text-box h6{
+    display: inline-block;
+    font-family: $alternateFont;
+    font-style: oblique;
+    text-transform: capitalize;
+}
+// to color the outline of the five stars
+.star-ratings{
+    -webkit-text-stroke-color: $primaryColor;
+    -webkit-text-stroke-width: 0.75px;
+}
+
+// positioning of three dots
+.progression-dots{
+    font-size: 5px;
+    margin: 5% 5%;
+}
+.progression-dots i{
+    padding: 1% 1%;
+}
+
+// styling of client logos
+.client-container{
+    text-align: center;
+    margin: 0 auto; 
+    padding: 10px 0px;
+}
+
+.client-logos{
+    background: rgba(255,255,255,0.2);
+    width:100%;
+}
+.client-container, .client-logos{
+    @include parent-flex-row;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.client-container{
+    justify-content: space-between;
+}
+
+.client-container i{
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;    
+    background: white;
+    color: $sectionColorDark;
+}
+
+.client-container i:first-child{
+    position: absolute;
+    top:50%;
+    left:-1%;
+    transform: translateY(-50%);
+}
+.client-container i:last-child{
+    position: absolute;
+    top:50%;
+    right:-1%;
+    transform: translateY(-50%);
+}
+
+.client-logos{
+    justify-content: center;
+    align-content:space-between;
+    list-style: none;
+    padding:0;
+}
+
+.client-logos li{
+    border-left: 1px solid $lineColor;
+    border-right: 1px solid $lineColor;
+    padding:10px;
+}
+
+.client-logos li:first-child{
+    border-left: 0px;
+}
+.client-logos li:last-child{
+    border-right: 0px;
+}
+
+// diamond border mixin
+.clients .text-box .diamond{
+    @include diamond-inner($sectionColorDark);
+}
+.clients .text-box .outer-diamond{
+    @include diamond-outline(lightslategray);
+    margin: 0 auto;
+}
